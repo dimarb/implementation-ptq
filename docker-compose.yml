@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  
+
+  app:
+    build: .
+    container_name: prompt-to-query-app
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: ${NODE_ENV:-development}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - app-network
+
+volumes:
+  mongodb_data:
+    driver: local
+  mongodb_config:
+    driver: local
+
+networks:
+  app-network:
+    driver: bridge

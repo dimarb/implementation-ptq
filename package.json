@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@toon-format/toon": "^0.7.3",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.2",
+    "prompt-to-query": "^1.0.19"
+  }
+}
