@@ -9,7 +9,7 @@ Este proyecto utiliza el SDK `prompt-to-query` para generar queries de MongoDB d
 - Mongoose para ODM (Object Document Mapping)
 - Modelos basados en el schema.json
 - Variables de entorno para configuración
-- Endpoint POST `/promt` para generar queries desde lenguaje natural
+- Endpoint POST `/prompt` para generar queries desde lenguaje natural
 
 ## Estructura del Proyecto
 
@@ -39,7 +39,7 @@ Este proyecto utiliza el SDK `prompt-to-query` para generar queries de MongoDB d
 
 1. Clonar el repositorio y navegar al directorio:
    ```bash
-   cd /Users/dimarborda/2025/impl-promt-to-query
+   cd impl-promt-to-query
    ```
 
 2. Copiar el archivo de variables de entorno:

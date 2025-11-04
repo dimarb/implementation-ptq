@@ -84,7 +84,7 @@ app.get('/ping', (req, res) => {
 });
 
 // Endpoint POST /promt
-app.post('/promt', async (req, res) => {
+app.post('/prompt', async (req, res) => {
   try {
     const { prompt } = req.body;
     console.log('Received prompt:', prompt);
